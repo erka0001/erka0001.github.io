@@ -51,7 +51,7 @@ nav ul a {
     /*height:100vh" */
 
     /* % based on parent container width */
-    width: 50vw;
+    width: 50%;
 }
 
 /* Selecting elements with class value   */
