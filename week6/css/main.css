@@ -2,7 +2,7 @@ body {
     color: darkslategrey;
     font-family: Arial, Helvetica, sans-serif;
     /*Adding background image*/
-    background-image: url(..images/white_brick_wall.png);
+    background-image: url(../images/white_brick_wall.png);
 }
 
 /*
