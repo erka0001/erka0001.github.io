@@ -221,7 +221,7 @@ h5 {
     border-right: 1px solid grey;
 }
 
-.navigation ul li:last-child {
+.navigation ul li:last-child a {
     border-right: none;
 }
 
