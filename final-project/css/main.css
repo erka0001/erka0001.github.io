@@ -589,9 +589,7 @@ iframe{
     margin: 0 auto;
   }
 
-
-
-
+/*About Us Section*/
   .aboutuscontent {
     display: flex;
     flex-direction: row;
@@ -604,12 +602,10 @@ iframe{
 
   }
 
-
   .aboutus {
     background-color: #ffe6ac;
 
   }
-
   .aboutuscontent img {
     order: 1;
     min-width: 50%;
