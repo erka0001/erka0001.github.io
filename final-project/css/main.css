@@ -403,6 +403,7 @@ p {
   font-weight: bold;
 }
 
+
 .btnvision {
   text-decoration: none;
   display: inline-block;
@@ -420,9 +421,9 @@ p {
 
   display: flex;
   flex-flow: row wrap;
-  }
+}
 
- /* .ourteamcontent div {
+/* .ourteamcontent div {
     flex: 1;       
   }*/
 
@@ -436,34 +437,109 @@ p {
 }
 
 .ourteamcontent img {
-  width: 100%;  
-  
+  width: 100%;
+
 }
 
-/*Content section*/
+.ourteamcontent hr {
+  display: block;
+  /*margin-top: 0.5em;*/
+  margin-bottom: 0.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-style: inset;
+  border-color: #C78C06;
+  border-width: 2px;
+}
 
-.contact {
+/*Contact section*/
+
+.contact{
   display: grid;
- 
+  /*margin-bottom: 10px;*/
 }
 
-.contact .sbmtbtn{
+.contact .sbmtbtn {
   background-color: #222;
   color: #C78C06;
+  font-size:1.5rem;
+  margin-top:10px;
+  padding: 5px;
 }
 
 /*Styling the form and textareas*/
-.form  {
+.form {
   padding: 10px;
+  width: 100%;
 }
 
 .form input[type=text],
 textarea {
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 10px;
  }
 
- 
+ .form>div{
+   margin-top: 10px;
+ }
+
+.form h3 {
+  padding-left: 0;
+}
+
+/*Styling the table*/
+
+
+
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+   }
+
+.table caption {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 10px;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+  /* 3 digit hex */
+  border: 1px solid #222;
+}
+
+.table th {
+  background-color: #ffe6ac;
+  text-align: center;
+
+}
+
+.table tr {
+  text-align: left;
+  width: 100%;
+
+}
+/*styling map*/
+iframe{
+  width: 100%;
+}
+
+.site-footer {
+  background-color: #222;
+  color:#C78C06;
+  text-align: left;
+  margin-top: 1.5em;
+  padding: 1em ;
+}
+
+/*.footer-content p {
+  margin:0;
+}*/
+
 /* --------------------------------------
             Desktop Styles
 ----------------------------------------- */
@@ -596,7 +672,7 @@ textarea {
     background-color: #ffe6ac;
   }
 
-
+/*Our Vision*/
   .ourvisioncontent {
     max-width: 1000px;
     margin: 0 auto;
@@ -610,8 +686,9 @@ textarea {
     display: flex;
     flex-flow: row wrap;
   }
-    /*flex-wrap: wrap;*/
-  
+
+  /*flex-wrap: wrap;*/
+
 
   .ourteamcontent h2 {
     flex-basis: 100%;
@@ -644,17 +721,24 @@ textarea {
     max-height: 50%;
     object-fit: cover;
 
- 
+
   }
-  
+
+  /*styling contact us */
+
+  .contact{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
   .contactuscontent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:
       "head head"
       "form maps"
-      "table"
+      "table table"
     ;
     gap: 1em;
   }
@@ -676,8 +760,20 @@ textarea {
     grid-area: table;
   }
 
-  input[type=text],
-textarea {
-  max-width: 1000px;
+  /*styling form */
+
+  .form input[type=text],
+  textarea {
+    max-width: 1000px;
+    width: 100%;
+    /*width: fit-content;*/
+  }
+
+  .footer-content {
+   max-width: 1000px;
+   margin: 0 auto;
+  }
+
+     
 
 }
