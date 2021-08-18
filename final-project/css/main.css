@@ -146,10 +146,12 @@ html {
 body {
   line-height: 1.5;
 }
+
 .container {
   margin: 0 auto;
   padding: 1em;
 }
+
 /*Styles for headers and paragraph*/
 h1,
 h2,
@@ -181,6 +183,7 @@ p {
   /* top-bottom left-right */
   margin: 1em 1em;
 }
+
 /*Styles for navigation*/
 a,
 a:link,
@@ -239,6 +242,7 @@ nav ul a:focus {
   padding: 0;
   margin: 0;
 }
+
 .navbanner {
   width: 100%;
 }
@@ -321,9 +325,7 @@ nav ul a:focus {
 
 .aboutus {
   background-color: #ffe6ac;
-  display: inline-block;
   justify-content: left;
-
 }
 
 .aboutuscontent2 h2 {
@@ -485,7 +487,7 @@ textarea {
 
 table th:nth-child(n),
 table td:nth-child(n) {
-border: 1px solid #222;
+  border: 1px solid #222;
 }
 
 .table th {
@@ -502,6 +504,7 @@ border: 1px solid #222;
 iframe {
   width: 100%;
 }
+
 /*Styles Footer*/
 
 .site-footer {
@@ -521,7 +524,7 @@ iframe {
     font-size: 16px;
   }
 
-   /* Navigation */
+  /* Navigation */
   .nav-list {
     display: flex;
   }
@@ -562,14 +565,13 @@ iframe {
   /*About Us Section*/
 
   .aboutuscontent {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffe6ac;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     align-content: center;
-  }
-
-  .aboutus {
-    background-color: #ffe6ac;
   }
 
   .aboutuscontent img {
@@ -723,7 +725,7 @@ iframe {
     width: 100%;
   }
 
- /*Styles for Footer*/
+  /*Styles for Footer*/
 
   .footer-content {
     max-width: 1200px;
